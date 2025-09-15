@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Dapps } from "./dapps";
 
 export function Beranda() {
   return (
@@ -108,9 +109,10 @@ export function Beranda() {
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-gray-400 py-10 text-center text-sm">
-        <p>© {new Date().getFullYear()} Babyboom. All rights reserved.</p>
-      </footer>
+      <div className="bg-gray-500 pb-5 text-center text-xl">dApps</div>
+      <Dapps />
+      <div className="bg-gray-500 pb-5"></div>
+
     </div>
   );
 }
