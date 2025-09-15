@@ -21,7 +21,7 @@ export function Dapps() {
       <div className="flex space-x-8 mt-8">
         <button
           onClick={() => handleSwitch("babyboom")}
-          className={`pb-1 border-b-2 transition-colors ${
+          className={`pb-1 border-b-2 transition-colors cursor-pointer ${
             active === "babyboom"
               ? "border-cyan-400 text-cyan-400"
               : "border-transparent hover:text-cyan-300"
@@ -31,7 +31,7 @@ export function Dapps() {
         </button>
         <button
           onClick={() => handleSwitch("sellon")}
-          className={`pb-1 border-b-2 transition-colors ${
+          className={`pb-1 border-b-2 transition-colors cursor-pointer ${
             active === "sellon"
               ? "border-cyan-400 text-cyan-400"
               : "border-transparent hover:text-cyan-300"

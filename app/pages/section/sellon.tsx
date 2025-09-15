@@ -16,29 +16,29 @@ export function Sellon() {
 
 	const howItWorks = [
 		{
-			icon: "/images/dapps/sellon/create-share-content.png",
+			image: "/images/dapps/sellon/create-share-content.png",
 			title: "Create & Share Content",
 			desc: "Post local updates, news, and interests through text, images, or videos to enrich the community.",
 		},
 		{
-			icon: "/images/dapps/sellon/engage-interact.png",
+			image: "/images/dapps/sellon/engage-interact.png",
 			title: "Engage & Interact",
 			desc: "Comment, chat, and exchange ideas with other users to build stronger local connections",
 		},
 		{
-			icon: "/images/dapps/sellon/community-recognition.png",
+			image: "/images/dapps/sellon/community-recognition.png",
 			title: "Community Recognition",
 			desc: "Earn appreciation and support when your content resonates with others through likes, shares, and engagement.",
 		},
 		{
-			icon: "/images/dapps/sellon/reward-system.png",
+			image: "/images/dapps/sellon/reward-system.png",
 			title: "Reward System",
 			desc: "Receive BBT for your contributions and interactions, turning community engagement into real value.",
 		},
 	];
 
 	return(
-		<div className="space-y-6">
+		<section className="space-y-6">
 			<div className="text-center">
 				<h2 className="text-cyan-400 text-xl font-semibold pb-7">
 					Real-World Utility through BBT DApps
@@ -96,7 +96,7 @@ export function Sellon() {
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 max-w-7xl mx-auto">
 					{howItWorks.map((howitwork, i) => (
 					<div key={i} className="flex flex-col items-center text-center space-y-4" >
-						<img src={howitwork.icon} alt={howitwork.title} className="w-60 h-60 object-contain" />
+						<img src={howitwork.image} alt={howitwork.title} className="w-60 h-60 object-contain" />
 						<h3 className="text-lg font-semibold">{howitwork.title}</h3>
 						<div className="w-70 h-[2px] bg-orange-500"></div>
 						<p className="text-whitetext-sm">{howitwork.desc}</p>
@@ -104,7 +104,6 @@ export function Sellon() {
 					))}
 				</div>
 			</div>
-
-		</div>
+		</section>
 	);
 }

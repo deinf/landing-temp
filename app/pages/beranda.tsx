@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Dapps } from "./dapps";
+import { Businessmodel } from "./businessmodel";
 
 export function Beranda() {
   return (
@@ -111,6 +112,8 @@ export function Beranda() {
 
       <div className="bg-gray-500 pb-5 text-center text-xl">dApps</div>
       <Dapps />
+      <div className="bg-gray-500 pb-5">Business Model</div>
+      <Businessmodel />
       <div className="bg-gray-500 pb-5"></div>
 
     </div>
