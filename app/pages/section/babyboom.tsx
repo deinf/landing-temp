@@ -24,29 +24,29 @@ export function Babyboom() {
 
 	const howItWorks = [
 		{
-			icon: "/images/dapps/babyboom/health-habit-tracking.png",
+			image: "/images/dapps/babyboom/health-habit-tracking.png",
 			title: "Health Habit Tracking",
 			desc: "Daily check-ins to track wellness habits and earn rewards.",
 		},
 		{
-			icon: "/images/dapps/babyboom/educational-content-coaching.png",
+			image: "/images/dapps/babyboom/educational-content-coaching.png",
 			title: "Educational Content & Coaching",
 			desc: "Health tips, fertility-friendly advice, and community-sourced guidance.",
 		},
 		{
-			icon: "/images/dapps/babyboom/community-support.png",
+			image: "/images/dapps/babyboom/community-support.png",
 			title: "Community Support",
 			desc: "Connect with peers, join group challenges, and share encouragement.",
 		},
 		{
-			icon: "/images/dapps/babyboom/reward-system.png",
+			image: "/images/dapps/babyboom/reward-system.png",
 			title: "Reward System",
 			desc: "Earn BBT for consistency, participation, and engagement.",
 		}
 	];
 
 	return(
-		<div className="space-y-6">
+		<section className="space-y-6">
 			<div className="text-center">
 				<h2 className="text-cyan-400 text-xl font-semibold pb-7">
 					Real-World Utility through BBT DApps
@@ -108,7 +108,7 @@ export function Babyboom() {
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14 max-w-7xl mx-auto">
 					{howItWorks.map((howitwork, i) => (
 					<div key={i} className="flex flex-col items-center text-center space-y-4" >
-						<img src={howitwork.icon} alt={howitwork.title} className="w-60 h-60 object-contain" />
+						<img src={howitwork.image} alt={howitwork.title} className="w-60 h-60 object-contain" />
 						<h3 className="text-lg font-semibold">{howitwork.title}</h3>
 						<div className="w-70 h-[2px] bg-cyan-400"></div>
 						<p className="text-gray-300 text-sm">{howitwork.desc}</p>
@@ -116,7 +116,6 @@ export function Babyboom() {
 					))}
 				</div>
 			</div>
-
-		</div>
+		</section>
 	);
 }
