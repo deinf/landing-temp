@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Dapps } from "./dapps";
 import { Businessmodel } from "./businessmodel";
 import { Partnermedia } from "./partnermedia";
+import { Whitepaper } from "./whitepaper";
 
 export function Beranda() {
   const stats = [
@@ -139,7 +140,7 @@ export function Beranda() {
             <a href="https://bbt.babyboomtoken.com/redirect">Start Your Wellness Journey</a>
           </button>
           <button className="border border-white px-6 py-2 rounded-2xl font-semibold hover:bg-white/10 cursor-pointer">
-            <a href="https://babyboomtoken.imweb.me/Whitepaper">Whitepaper</a>
+            <a href="https://babyboomtoken.imweb.me/Whitepaper">Whitepaper</a> {/* later move to our own page, babyboomtoken.com/whitepaper */}
           </button>
         </motion.div>
 
@@ -295,6 +296,8 @@ export function Beranda() {
       <Businessmodel />
       <div className="bg-gray-500 pb-5 text-center text-xl">Partner & Media</div>
       <Partnermedia />
+      <div className="bg-gray-500 pb-5 text-center text-xl">Whitepaper</div>
+      <Whitepaper />
       <div className="bg-gray-500 pb-5"></div>
 
     </div>
