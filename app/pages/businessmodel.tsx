@@ -57,12 +57,12 @@ export function Businessmodel() {
     return(
         <div className="space-y-6 px-20 pt-20">
 			<div className="text-center px-25">
-				<h2 className="text-cyan-400 text-4xl font-semibold pb-7">
+				<h1 className="text-cyan-400 text-4xl font-semibold pb-7">
 					Business Model
-				</h2>
-				<h1 className="text-3xl font-bold pb-4">
-					Creating sustainable value through engagement, data, and tokenization
 				</h1>
+				<h2 className="text-3xl font-bold pb-4">
+					Creating sustainable value through engagement, data, and tokenization
+				</h2>
 				<p className="text-gray-300">
 					The BBT business model goes beyond simple rewards. By combining user engagement, data monetization, advertising, and personalized services with a recurring token buyback cycle, we create a sustainable ecosystem that ensures stability, trust, and long-term growth
 				</p>

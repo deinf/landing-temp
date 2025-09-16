@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Babyboom } from "./section/babyboom";
-import { Sellon } from "./section/sellon";
+import { Babyboom } from "./section/dapps/babyboom";
+import { Sellon } from "./section/dapps/sellon";
 
 export function Dapps() {
   const [active, setActive] = useState<"babyboom" | "sellon">("babyboom");
