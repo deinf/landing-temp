@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "dApps", path: "/dapps" },
     { name: "Tokenomics & Roadmap", path: "/tokenomics" },
     { name: "Business Model", path: "/business-model" },
+    { name: "Partner & Media", path: "/partner-media" },
   ];
 
   return (
